@@ -1,0 +1,36 @@
+@use "variables";
+
+.intro-accueil {
+	&__title {
+		font-family: variables.$font-headings;
+		font-weight: 700;
+	}
+
+	&__category {
+		transition: ease all 0.3s;
+
+		&:hover {
+			transform: scale(1.05);
+			transition: ease all 0.3s;
+		}
+
+		img {
+			filter: brightness(40%);
+		}
+
+		h2 {
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__button {
+		background-color: variables.$pink;
+		color: variables.$white;
+
+		&:hover,
+		&:focus {
+			background-color: variables.$green;
+			color: variables.$white;
+		}
+	}
+}

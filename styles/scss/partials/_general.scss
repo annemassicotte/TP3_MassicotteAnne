@@ -2,4 +2,10 @@
 
 body {
 	color: variables.$black;
+	font-family: variables.$font-body;
+}
+
+h1, h2, h3{
+	font-family: variables.$font-headings;
+	font-weight:bold;
 }

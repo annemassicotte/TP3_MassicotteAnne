@@ -1,6 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@400;500;600;700&display=swap");
 body {
   color: rgb(12, 12, 12);
+  font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
 }
 
 header {
@@ -12,7 +18,7 @@ header {
   color: #ffffff;
 }
 .navbar__button:hover, .navbar__button:focus {
-  background-color: #e15a6e;
+  background-color: #c1495b;
   color: #ffffff;
 }
 .navbar__menu-item {
@@ -22,7 +28,7 @@ header {
   color: #116329;
 }
 .navbar__menu-item--active {
-  color: #e15a6e;
+  text-decoration: underline;
 }
 
 .footer {
@@ -36,7 +42,7 @@ header {
   max-width: 250px;
 }
 .footer__title {
-  font-family: "Fuzzy Bubbles", cursive;
+  font-family: "DM Serif Display", serif;
   font-weight: 700;
 }
 .footer__menu-item:not(:last-child) {
@@ -62,4 +68,30 @@ header {
   .footer__column:nth-child(2), .footer__column:nth-child(3) {
     flex-basis: 100%;
   }
+}
+
+.intro-accueil__title {
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+}
+.intro-accueil__category {
+  transition: ease all 0.3s;
+}
+.intro-accueil__category:hover {
+  transform: scale(1.05);
+  transition: ease all 0.3s;
+}
+.intro-accueil__category img {
+  filter: brightness(40%);
+}
+.intro-accueil__category h2 {
+  transform: translate(-50%, -50%);
+}
+.intro-accueil__button {
+  background-color: #c1495b;
+  color: #ffffff;
+}
+.intro-accueil__button:hover, .intro-accueil__button:focus {
+  background-color: #116329;
+  color: #ffffff;
 }/*# sourceMappingURL=styles.css.map */

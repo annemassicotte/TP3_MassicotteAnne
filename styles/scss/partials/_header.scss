@@ -9,21 +9,22 @@ header {
 		background-color: variables.$green;
 		color: variables.$white;
 
-		&:hover, &:focus {
+		&:hover,
+		&:focus {
 			background-color: variables.$pink;
 			color: variables.$white;
 		}
 	}
 
-    &__menu-item{
-        font-family: variables.$font-body;
-        
-        &:focus{
-            color: variables.$green;
-        }
+	&__menu-item {
+		font-family: variables.$font-body;
 
-        &--active{
-            color: variables.$pink;
-        }
-    }
+		&:focus {
+			color: variables.$green;
+		}
+
+		&--active {
+			text-decoration: underline;
+		}
+	}
 }
