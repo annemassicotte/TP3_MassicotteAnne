@@ -23,4 +23,43 @@ header {
 }
 .navbar__menu-item--active {
   color: #e15a6e;
+}
+
+.footer {
+  background-color: #116329;
+  color: #ffffff;
+}
+.footer__column {
+  flex-basis: calc(33.3333333333% - 2rem);
+}
+.footer__logo {
+  max-width: 250px;
+}
+.footer__title {
+  font-family: "Fuzzy Bubbles", cursive;
+  font-weight: 700;
+}
+.footer__menu-item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 1536px) {
+  .footer__logo {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer__column:first-child {
+    flex-basis: 100%;
+  }
+  .footer__column:nth-child(2), .footer__column:nth-child(3) {
+    flex-basis: calc(50% - 2rem);
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__logo {
+    max-width: 175px;
+  }
+  .footer__column:nth-child(2), .footer__column:nth-child(3) {
+    flex-basis: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,58 @@
+@use "variables";
+
+.footer {
+	background-color: variables.$green;
+	color: variables.$white;
+
+	&__column {
+		flex-basis: calc((100% / 3) - 2rem);
+	}
+
+	&__logo {
+		max-width: 250px;
+	}
+
+	&__title {
+		font-family: variables.$font-headings;
+		font-weight: 700;
+	}
+
+	&__menu-item {
+		&:not(:last-child) {
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	@media screen and (max-width: 1536px) {
+		&__logo {
+			max-width: 200px;
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		&__column {
+			&:first-child {
+				flex-basis: 100%;
+			}
+
+			&:nth-child(2),
+			&:nth-child(3) {
+				flex-basis: calc((100% / 2) - 2rem);
+			}
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+
+        &__logo {
+			max-width: 175px;
+		}
+
+		&__column {
+			&:nth-child(2),
+			&:nth-child(3) {
+				flex-basis: 100%;
+			}
+		}
+	}
+}
