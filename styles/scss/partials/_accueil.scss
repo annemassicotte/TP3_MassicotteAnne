@@ -1,9 +1,10 @@
 @use "variables";
 
+/* Section Catégories */
+
 .intro-accueil {
 	&__title {
 		font-family: variables.$font-headings;
-		font-weight: 700;
 	}
 
 	&__category {
@@ -32,5 +33,24 @@
 			background-color: variables.$green;
 			color: variables.$white;
 		}
+	}
+}
+
+/* Section CTA Boîtes-repas */
+
+.cta-section {
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		180deg,
+		variables.$white 0%,
+		variables.$lighter-green 100%
+	);
+
+	&__title {
+		font-family: variables.$font-headings;
+	}
+
+	ul {
+		padding-left: 1.1rem;
 	}
 }

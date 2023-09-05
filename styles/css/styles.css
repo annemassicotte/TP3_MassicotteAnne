@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@400;500;600;700&display=swap");
 body {
   color: rgb(12, 12, 12);
@@ -6,7 +7,6 @@ body {
 
 h1, h2, h3 {
   font-family: "DM Serif Display", serif;
-  font-weight: bold;
 }
 
 header {
@@ -70,9 +70,9 @@ header {
   }
 }
 
+/* Section Catégories */
 .intro-accueil__title {
   font-family: "DM Serif Display", serif;
-  font-weight: 700;
 }
 .intro-accueil__category {
   transition: ease all 0.3s;
@@ -94,4 +94,16 @@ header {
 .intro-accueil__button:hover, .intro-accueil__button:focus {
   background-color: #116329;
   color: #ffffff;
+}
+
+/* Section CTA Boîtes-repas */
+.cta-section {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, #ffffff 0%, #d8e5bb 100%);
+}
+.cta-section__title {
+  font-family: "DM Serif Display", serif;
+}
+.cta-section ul {
+  padding-left: 1.1rem;
 }/*# sourceMappingURL=styles.css.map */
