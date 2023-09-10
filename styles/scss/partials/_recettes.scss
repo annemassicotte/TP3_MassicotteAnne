@@ -1,0 +1,15 @@
+@use "variables";
+
+.section-recette-mois {
+	&__title {
+		font-family: variables.$font-body;
+	}
+
+	&__name {
+		font-family: variables.$font-headings;
+	}
+
+	iframe {
+		width: 100%;
+	}
+}

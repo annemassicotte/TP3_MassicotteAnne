@@ -5,12 +5,28 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "DM Serif Display", serif;
 }
 
+ul,
+ol {
+  padding-left: 1.1rem !important;
+}
+ul li,
+ol li {
+  padding-left: 0.5rem;
+}
+
+.section-titre {
+  background-image: url("../../../images/pattern-feuilles.jpg");
+  object-fit: cover;
+}
+
 header {
-  background-color: #d8e5bb;
+  background-color: #e1f6b7;
 }
 
 .navbar__button {
@@ -99,17 +115,24 @@ header {
 /* Section CTA Boîtes-repas */
 .cta-section {
   background: #ffffff;
-  background: linear-gradient(180deg, #ffffff 0%, #d8e5bb 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #e1f6b7 100%);
 }
 .cta-section__title {
   font-family: "DM Serif Display", serif;
 }
-.cta-section ul {
-  padding-left: 1.1rem;
-}
 
 /* Section À propos */
 .section-a-propos {
-  background: #d8e5bb;
-  background: linear-gradient(180deg, #d8e5bb 0%, #ffffff 100%);
+  background: #e1f6b7;
+  background: linear-gradient(180deg, #e1f6b7 0%, #ffffff 100%);
+}
+
+.section-recette-mois__title {
+  font-family: "Raleway", sans-serif;
+}
+.section-recette-mois__name {
+  font-family: "DM Serif Display", serif;
+}
+.section-recette-mois iframe {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
