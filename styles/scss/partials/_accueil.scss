@@ -8,12 +8,6 @@
 	}
 
 	&__category {
-		transition: ease all 0.3s;
-
-		&:hover {
-			transform: scale(1.05);
-			transition: ease all 0.3s;
-		}
 
 		img {
 			filter: brightness(40%);

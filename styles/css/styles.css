@@ -20,6 +20,14 @@ ol li {
   padding-left: 0.5rem;
 }
 
+.zoom-in {
+  transition: ease all 0.3s;
+}
+.zoom-in:hover {
+  transform: scale(1.05);
+  transition: ease all 0.3s;
+}
+
 .section-titre {
   background-image: url("../../../images/pattern-feuilles.jpg");
   object-fit: cover;
@@ -90,13 +98,6 @@ header {
 .intro-accueil__title {
   font-family: "DM Serif Display", serif;
 }
-.intro-accueil__category {
-  transition: ease all 0.3s;
-}
-.intro-accueil__category:hover {
-  transform: scale(1.05);
-  transition: ease all 0.3s;
-}
 .intro-accueil__category img {
   filter: brightness(40%);
 }
@@ -135,4 +136,22 @@ header {
 }
 .section-recette-mois iframe {
   width: 100%;
+}
+
+.section-categories-recettes {
+  background-color: #e1f6b7;
+}
+.section-categories-recettes h3 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+}
+.section-categories-recettes__button {
+  border-color: rgb(12, 12, 12);
+  transition: ease all 0.3s;
+}
+.section-categories-recettes__button:hover {
+  transform: scale(1.05);
+  transition: ease all 0.3s;
+  background-color: #116329;
+  border-color: #116329;
 }/*# sourceMappingURL=styles.css.map */

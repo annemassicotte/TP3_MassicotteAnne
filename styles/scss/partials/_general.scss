@@ -20,6 +20,15 @@ ol {
 	}
 }
 
+.zoom-in {
+	transition: ease all 0.3s;
+
+	&:hover {
+		transform: scale(1.05);
+		transition: ease all 0.3s;
+	}
+}
+
 .section-titre {
 	background-image: url("../../../images/pattern-feuilles.jpg");
 	object-fit: cover;

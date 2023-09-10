@@ -13,3 +13,29 @@
 		width: 100%;
 	}
 }
+
+.section-categories-recettes {
+	background-color: variables.$lighter-green;
+
+	h3 {
+		background: rgb(0, 0, 0);
+		background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0) 0%,
+			rgb(0, 0, 0, 1) 100%
+		);
+	}
+
+	&__button {
+		border-color: variables.$black;
+
+		transition: ease all 0.3s;
+
+		&:hover {
+			transform: scale(1.05);
+			transition: ease all 0.3s;
+			background-color: variables.$green;
+			border-color:variables.$green;
+		}
+	}
+}
