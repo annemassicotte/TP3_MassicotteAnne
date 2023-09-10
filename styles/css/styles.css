@@ -98,7 +98,7 @@ header {
 
 /* Section CTA Boîtes-repas */
 .cta-section {
-  background: rgb(255, 255, 255);
+  background: #ffffff;
   background: linear-gradient(180deg, #ffffff 0%, #d8e5bb 100%);
 }
 .cta-section__title {
@@ -106,4 +106,10 @@ header {
 }
 .cta-section ul {
   padding-left: 1.1rem;
+}
+
+/* Section À propos */
+.section-a-propos {
+  background: #d8e5bb;
+  background: linear-gradient(180deg, #d8e5bb 0%, #ffffff 100%);
 }/*# sourceMappingURL=styles.css.map */

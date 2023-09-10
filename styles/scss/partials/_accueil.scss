@@ -39,7 +39,7 @@
 /* Section CTA Boîtes-repas */
 
 .cta-section {
-	background: rgb(255, 255, 255);
+	background: variables.$white;
 	background: linear-gradient(
 		180deg,
 		variables.$white 0%,
@@ -53,4 +53,15 @@
 	ul {
 		padding-left: 1.1rem;
 	}
+}
+
+/* Section À propos */
+
+.section-a-propos{
+	background: variables.$lighter-green ;
+	background: linear-gradient(
+		180deg,
+		variables.$lighter-green  0%,
+		variables.$white 100%
+	);
 }
