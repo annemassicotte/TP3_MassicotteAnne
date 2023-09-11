@@ -29,7 +29,7 @@ ol li {
 }
 
 .section-titre {
-  background-image: url("../../../images/pattern-feuilles.jpg");
+  background-image: url(../../../images/pattern-feuilles.jpg);
   object-fit: cover;
 }
 
