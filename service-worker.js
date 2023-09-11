@@ -1,12 +1,12 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = "static-cache-v1";
+const CACHE_NAME = "static-cache-v2";
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
-	"../index.html",
-	"../recettes.html",
-	"../boites-repas.html",
-    "../confirmation.html",
-    "../offline.html"
+	"index.html",
+	"recettes.html",
+	"boites-repas.html",
+    "confirmation.html",
+    "offline.html"
 ];
 
 self.addEventListener("install", (evt) => {
@@ -53,7 +53,7 @@ self.addEventListener("fetch", (evt) => {
 	evt.respondWith(
 		fetch(evt.request).catch(() => {
 			return caches.open(CACHE_NAME).then((cache) => {
-				return cache.match("../offline.html");
+				return cache.match("offline.html");
 			});
 		})
 	);
