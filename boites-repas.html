@@ -10,6 +10,7 @@
 		<!-- 		<link rel="stylesheet" href="css/normalize.css" /> -->
 		<link rel="stylesheet" href="styles/css/styles.css" />
 		<link rel="icon" href="favicon.png" />
+        <script src="js/validation.js"></script>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link
 			rel="stylesheet"
@@ -31,7 +32,7 @@
 						</a>
 						<div class="flex items-center lg:order-2">
 							<a
-								href="boites-repas.html/#offre-speciale"
+								href="boites-repas.html#offre-speciale"
 								class="navbar__button hidden rounded-lg p-4 font-semibold lg:block"
 								>Offre spéciale!</a
 							>
@@ -367,6 +368,167 @@
 							quibusdam debitis nisi voluptates assumenda perferendis
 							voluptatibus. Quidem!
 						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-abonnement py-12 lg:py-24">
+				<div
+					class="container px-8 mx-auto grid grid-cols-12 gap-y-10 items-center lg:gap-20">
+					<div class="col-span-12 text-center lg:col-start-3 lg:col-end-11">
+						<h2 class="mb-8 text-3xl lg:mb-8 lg:text-4xl">Abonnement</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+							repudiandae debitis perspiciatis facere excepturi ipsa ea non a
+							deleniti officia tempora nostrum, eius iste aspernatur fugit!
+							Placeat possimus sed quidem! Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Molestiae repudiandae debitis
+							perspiciatis facere excepturi ipsa ea non a deleniti officia
+							tempora nostrum, eius iste aspernatur fugit! Placeat possimus sed
+							quidem!
+						</p>
+					</div>
+
+					<div class="col-span-12 lg:col-start-3 lg:col-end-11">
+						<form
+							action="confirmation.html"
+							id="form-subscription"
+							onsubmit="return validateSubscriptionForm()"
+							novalidate>
+							<div class="flex flex-col gap-4">
+								<div class="flex flex-col gap-4 sm:flex-row">
+									<div class="flex flex-col w-full sm:w-1/2 input-control">
+										<label class="" for="txtNom"
+											>Nom de famille <span>*</span></label
+										>
+										<input
+											class="rounded-lg"
+											type="text"
+											id="txtNom"
+											name="txtNom"
+											required />
+										<div class="errorMessage"></div>
+									</div>
+
+									<div class="flex flex-col w-full sm:w-1/2 input-control">
+										<label class="" for="txtPrenom"
+											>Prénom <span>*</span></label
+										>
+										<input
+											class="rounded-lg"
+											type="text"
+											id="txtPrenom"
+											name="txtPrenom"
+											required />
+										<div class="errorMessage"></div>
+									</div>
+								</div>
+
+								<div class="flex flex-col gap-4 sm:flex-row">
+									<div class="flex flex-col w-full sm:w-1/2 input-control">
+										<label class="" for="email"> Courriel <span>*</span></label>
+										<input
+											class="rounded-lg"
+											type="email"
+											id="email"
+											name="courriel"
+											required />
+										<div class="errorMessage"></div>
+									</div>
+
+									<div class="flex flex-col w-full sm:w-1/2 input-control">
+										<label class="" for="numTel"
+											>Numéro de téléphone <span>*</span></label
+										>
+										<input
+											class="rounded-lg"
+											type="tel"
+											id="numTel"
+											name="numTel"
+											required />
+										<div class="errorMessage"></div>
+									</div>
+								</div>
+
+								<div class="flex flex-col gap-4 sm:flex-row">
+									<div class="flex flex-col w-full sm:w-1/2 input-control">
+										<label class="" for="txtAdresse"
+											>Adresse <span>*</span></label
+										>
+										<input
+											class="rounded-lg"
+											type="text"
+											id="txtAdresse"
+											name="txtAdresse"
+											required />
+										<div class="errorMessage"></div>
+									</div>
+
+									<div class="flex flex-col w-full sm:w-1/2 input-control">
+										<label class="" for="txtVille">Ville<span>*</span></label>
+										<input
+											class="rounded-lg"
+											type="text"
+											id="txtVille"
+											name="txtVille"
+											required />
+										<div class="errorMessage"></div>
+									</div>
+								</div>
+
+								<div class="flex flex-col gap-4 sm:flex-row">
+									<div class="flex flex-col w-full sm:w-1/2 input-control">
+										<label class="" for="txtCodePostal"
+											>Code postal <span>*</span></label
+										>
+										<input
+											class="rounded-lg"
+											type="text"
+											id="txtCodePostal"
+											name="txtCodePostal"
+											required />
+										<div class="errorMessage"></div>
+									</div>
+
+									<div class="flex flex-col w-full sm:w-1/2 input-control">
+										<label class="" for="selForfait"
+											>Nombre de recettes par semaine <span>*</span></label
+										>
+										<select
+											class="rounded-lg py-2 px-3"
+											name="selForfait"
+											id="selForfait"
+											required>
+											<option value="">Sélectionner un forfait</option>
+											<option value="3">3 recettes (77,16 $)</option>
+											<option value="4">4 recettes (95,20 $)</option>
+											<option value="5">5 recettes (113,24 $)</option>
+											<option value="6">6 recettes (132,29 $)</option>
+											<option value="7">7 recettes (153,27 $)</option>
+										</select>
+										<div class="errorMessage"></div>
+									</div>
+								</div>
+
+								<div class="flex flex-col">
+									<label class="" for="txtAreaPrecisions"
+										>Précisions (ex.: allergies, préférences alimentaires, etc.)
+										(facultatif)</label
+									>
+									<textarea
+										class="rounded-lg"
+										name="txtAreaPrecisions"
+										id="txtAreaPrecisions"
+										rows="5"></textarea>
+								</div>
+
+								<button
+									class="section-abonnement__button text-white mx-auto inline-block p-4 rounded-lg mt-0 md:mt-8"
+									type="submit">
+									M'abonner
+								</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</section>
