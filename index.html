@@ -15,7 +15,16 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 		<meta name="apple-mobile-web-app-title" content="Recettes VégAnne PWA" />
-		<link rel="apple-touch-icon" href="images/icons/maskable_icon_x192.png">
+		<link rel="apple-touch-icon" href="images/icons/maskable_icon_x192.png" />
+		<script>
+			if ("serviceWorker" in navigator) {
+				window.addEventListener("load", () => {
+					navigator.serviceWorker.register("service-worker.js").then((reg) => {
+						console.log("Service worker registered.", reg);
+					});
+				});
+			}
+		</script>
 		<link rel="icon" href="favicon.png" />
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link
@@ -108,6 +117,16 @@
 										class="navbar__button rounded-lg font-semibold inline-block px-4 lg:block lg:px-5 py-2 lg:py-2.5"
 										>Offre spéciale!</a
 									>
+								</li>
+
+								<li>
+									<button
+										class="navbar__button rounded-lg p-4 font-semibold"
+										id="butInstall"
+										aria-label="Installer"
+										hidden>
+										Installer la PWA
+									</button>
 								</li>
 							</ul>
 						</div>
@@ -337,5 +356,6 @@
 			</div>
 		</footer>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+		<script src="js/install.js"></script>
 	</body>
 </html>
