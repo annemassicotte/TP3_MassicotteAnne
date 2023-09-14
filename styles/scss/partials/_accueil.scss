@@ -1,4 +1,14 @@
 @use "variables";
+@use "mixins";
+
+%button {
+	@include mixins.buttonColors(variables.$white, variables.$green);
+
+	&:hover,
+	&:focus {
+		@include mixins.buttonColors(variables.$white, variables.$pink);
+	}
+}
 
 /* Section Catégories */
 
@@ -8,7 +18,6 @@
 	}
 
 	&__category {
-
 		img {
 			filter: brightness(40%);
 		}
@@ -19,14 +28,7 @@
 	}
 
 	&__button {
-		background-color: variables.$pink;
-		color: variables.$white;
-
-		&:hover,
-		&:focus {
-			background-color: variables.$green;
-			color: variables.$white;
-		}
+		@extend %button;
 	}
 }
 
@@ -43,15 +45,23 @@
 	&__title {
 		font-family: variables.$font-headings;
 	}
+
+	&__button {
+		@extend %button;
+	}
 }
 
 /* Section À propos */
 
-.section-a-propos{
-	background: variables.$lighter-green ;
+.section-a-propos {
+	background: variables.$lighter-green;
 	background: linear-gradient(
 		180deg,
-		variables.$lighter-green  0%,
+		variables.$lighter-green 0%,
 		variables.$white 100%
 	);
+
+	&__button {
+		@extend %button;
+	}
 }

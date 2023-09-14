@@ -1,4 +1,16 @@
 @use "variables";
+@use "mixins";
+
+.section-intro {
+	&__button {
+		@include mixins.buttonColors(variables.$white, variables.$green);
+
+		&:hover,
+		&:focus {
+			@include mixins.buttonColors(variables.$white, variables.$pink);
+		}
+	}
+}
 
 .section-temoignages {
 	background-color: variables.$green;
@@ -14,39 +26,44 @@
 		border-color: variables.$black;
 
 		&:focus {
-			border-color: variables.$green;
+			border-color: variables.$pink;
 			border-width: 2px;
 		}
 	}
 
-	&__button {
-		background-color: variables.$green !important;
+	button {
+		@include mixins.buttonColors(variables.$white, variables.$green);
 		width: fit-content;
+
+		&:hover,
+		&:focus {
+			@include mixins.buttonColors(variables.$white, variables.$pink);
+		}
 	}
 
 	.input-control {
 		&.success {
 			input,
 			select {
-				border-color: green;
+				border: 2px solid variables.$green;
 			}
 		}
 
 		&.error {
 			input,
 			select {
-				border-color: red;
+				border: 2px solid variables.$validation-red;
 			}
 		}
 
 		.errorMessage {
 			font-size: 0.75rem;
 			margin-top: 0.25rem;
-			color: red;
+			color: variables.$validation-red;
 		}
 
 		span {
-			color: red;
+			color: variables.$validation-red;
 		}
 	}
 }

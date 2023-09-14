@@ -38,12 +38,12 @@ header {
 }
 
 .navbar__button {
-  background-color: #116329;
   color: #ffffff;
+  background-color: #116329;
 }
 .navbar__button:hover, .navbar__button:focus {
-  background-color: #c1495b;
   color: #ffffff;
+  background-color: #c1495b;
 }
 .navbar__menu-item {
   font-family: "Raleway", sans-serif;
@@ -53,6 +53,7 @@ header {
 }
 .navbar__menu-item--active {
   text-decoration: underline;
+  color: #116329;
 }
 
 .footer {
@@ -94,6 +95,15 @@ header {
   }
 }
 
+.section-a-propos__button, .cta-section__button, .intro-accueil__button {
+  color: #ffffff;
+  background-color: #116329;
+}
+.section-a-propos__button:hover, .cta-section__button:hover, .intro-accueil__button:hover, .section-a-propos__button:focus, .cta-section__button:focus, .intro-accueil__button:focus {
+  color: #ffffff;
+  background-color: #c1495b;
+}
+
 /* Section Catégories */
 .intro-accueil__title {
   font-family: "DM Serif Display", serif;
@@ -104,15 +114,6 @@ header {
 .intro-accueil__category h2 {
   transform: translate(-50%, -50%);
 }
-.intro-accueil__button {
-  background-color: #c1495b;
-  color: #ffffff;
-}
-.intro-accueil__button:hover, .intro-accueil__button:focus {
-  background-color: #116329;
-  color: #ffffff;
-}
-
 /* Section CTA Boîtes-repas */
 .cta-section {
   background: #ffffff;
@@ -121,13 +122,11 @@ header {
 .cta-section__title {
   font-family: "DM Serif Display", serif;
 }
-
 /* Section À propos */
 .section-a-propos {
   background: #e1f6b7;
   background: linear-gradient(180deg, #e1f6b7 0%, #ffffff 100%);
 }
-
 .section-recette-mois__title {
   font-family: "Raleway", sans-serif;
 }
@@ -156,6 +155,15 @@ header {
   border-color: #116329;
 }
 
+.section-intro__button {
+  color: #ffffff;
+  background-color: #116329;
+}
+.section-intro__button:hover, .section-intro__button:focus {
+  color: #ffffff;
+  background-color: #c1495b;
+}
+
 .section-temoignages {
   background-color: #116329;
 }
@@ -172,26 +180,31 @@ header {
 .section-abonnement input:focus,
 .section-abonnement select:focus,
 .section-abonnement textarea:focus {
-  border-color: #116329;
+  border-color: #c1495b;
   border-width: 2px;
 }
-.section-abonnement__button {
-  background-color: #116329 !important;
+.section-abonnement button {
+  color: #ffffff;
+  background-color: #116329;
   width: fit-content;
+}
+.section-abonnement button:hover, .section-abonnement button:focus {
+  color: #ffffff;
+  background-color: #c1495b;
 }
 .section-abonnement .input-control.success input,
 .section-abonnement .input-control.success select {
-  border-color: green;
+  border: 2px solid #116329;
 }
 .section-abonnement .input-control.error input,
 .section-abonnement .input-control.error select {
-  border-color: red;
+  border: 2px solid rgb(203, 15, 15);
 }
 .section-abonnement .input-control .errorMessage {
   font-size: 0.75rem;
   margin-top: 0.25rem;
-  color: red;
+  color: rgb(203, 15, 15);
 }
 .section-abonnement .input-control span {
-  color: red;
+  color: rgb(203, 15, 15);
 }/*# sourceMappingURL=styles.css.map */

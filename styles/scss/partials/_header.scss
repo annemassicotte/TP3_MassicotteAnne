@@ -1,4 +1,5 @@
 @use "variables";
+@use "mixins";
 
 header {
 	background-color: variables.$lighter-green;
@@ -6,13 +7,11 @@ header {
 
 .navbar {
 	&__button {
-		background-color: variables.$green;
-		color: variables.$white;
+		@include mixins.buttonColors(variables.$white, variables.$green);
 
 		&:hover,
 		&:focus {
-			background-color: variables.$pink;
-			color: variables.$white;
+			@include mixins.buttonColors(variables.$white, variables.$pink);
 		}
 	}
 
@@ -25,6 +24,7 @@ header {
 
 		&--active {
 			text-decoration: underline;
+			color: variables.$green;
 		}
 	}
 }
