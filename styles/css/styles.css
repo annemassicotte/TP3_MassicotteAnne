@@ -163,10 +163,14 @@ header {
 
 .section-categories-recettes {
   background-color: #e1f6b7;
-}
-.section-categories-recettes h3 {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  /* h3 {
+  	background: rgb(0, 0, 0);
+  	background: linear-gradient(
+  		180deg,
+  		rgba(0, 0, 0, 0) 0%,
+  		rgb(0, 0, 0, 1) 100%
+  	);
+  } */
 }
 .section-categories-recettes__button {
   border-color: rgb(12, 12, 12);
