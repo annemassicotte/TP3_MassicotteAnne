@@ -3,6 +3,7 @@
 body {
   color: rgb(12, 12, 12);
   font-family: "Raleway", sans-serif;
+  font-size: 18px;
 }
 
 h1,
@@ -37,13 +38,8 @@ header {
   background-color: #e1f6b7;
 }
 
-.navbar__button {
-  color: #ffffff;
-  background-color: #116329;
-}
-.navbar__button:hover, .navbar__button:focus {
-  color: #ffffff;
-  background-color: #c1495b;
+.navbar__menu {
+  padding-left: 0 !important;
 }
 .navbar__menu-item {
   font-family: "Raleway", sans-serif;
@@ -54,6 +50,16 @@ header {
 .navbar__menu-item--active {
   text-decoration: underline;
   color: #116329;
+}
+.navbar__button {
+  color: #ffffff;
+  background-color: #116329;
+  font-weight: 600;
+}
+.navbar__button:hover, .navbar__button:focus {
+  color: #ffffff;
+  background-color: #c1495b;
+  font-weight: 600;
 }
 
 .footer {
@@ -69,6 +75,12 @@ header {
 .footer__title {
   font-family: "DM Serif Display", serif;
   font-weight: 700;
+}
+.footer__menu {
+  padding-left: 0 !important;
+}
+.footer__menu-item {
+  padding-left: 0;
 }
 .footer__menu-item:not(:last-child) {
   margin-bottom: 0.5rem;
@@ -98,21 +110,33 @@ header {
 .section-a-propos__button, .cta-section__button, .intro-accueil__button {
   color: #ffffff;
   background-color: #116329;
+  font-weight: 600;
 }
 .section-a-propos__button:hover, .cta-section__button:hover, .intro-accueil__button:hover, .section-a-propos__button:focus, .cta-section__button:focus, .intro-accueil__button:focus {
   color: #ffffff;
   background-color: #c1495b;
+  font-weight: 600;
+}
+
+.intro-accueil__categories-collation, .intro-accueil__categories-dessert, .intro-accueil__categories-diner, .intro-accueil__categories-dejeuner {
+  background-size: cover;
 }
 
 /* Section Catégories */
 .intro-accueil__title {
   font-family: "DM Serif Display", serif;
 }
-.intro-accueil__category img {
-  filter: brightness(40%);
+.intro-accueil__categories-dejeuner {
+  background-image: url("../../images/categorie-dejeuner.jpg");
 }
-.intro-accueil__category h2 {
-  transform: translate(-50%, -50%);
+.intro-accueil__categories-diner {
+  background-image: url("../../images/categorie-diner-souper.jpg");
+}
+.intro-accueil__categories-dessert {
+  background-image: url("../../images/categorie-dessert.jpg");
+}
+.intro-accueil__categories-collation {
+  background-image: url("../../images/categorie-collation.jpg");
 }
 /* Section CTA Boîtes-repas */
 .cta-section {
@@ -158,10 +182,12 @@ header {
 .section-intro__button {
   color: #ffffff;
   background-color: #116329;
+  font-weight: 600;
 }
 .section-intro__button:hover, .section-intro__button:focus {
   color: #ffffff;
   background-color: #c1495b;
+  font-weight: 600;
 }
 
 .section-temoignages {
@@ -186,11 +212,13 @@ header {
 .section-abonnement button {
   color: #ffffff;
   background-color: #116329;
+  font-weight: 600;
   width: fit-content;
 }
 .section-abonnement button:hover, .section-abonnement button:focus {
   color: #ffffff;
   background-color: #c1495b;
+  font-weight: 600;
 }
 .section-abonnement .input-control.success input,
 .section-abonnement .input-control.success select {

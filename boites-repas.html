@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="styles/css/styles.css" />
 		<link rel="icon" href="favicon.png" />
         <script src="js/validation.js"></script>
+		<script src="js/index.js" defer></script>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link
 			rel="stylesheet"
@@ -30,21 +31,16 @@
 								class="h-12 lg:h-14 xl:h-16"
 								alt="Logo Recettes VégAnne" />
 						</a>
-						<div class="flex items-center lg:order-2">
-							<a
-								href="boites-repas.html#offre-speciale"
-								class="navbar__button hidden rounded-lg p-4 font-semibold lg:block"
-								>Offre spéciale!</a
-							>
+						<div class="flex items-center xl:order-2">
 							<button
 								data-collapse-toggle="mobile-menu-2"
 								type="button"
-								class="inline-flex items-center p-2 rounded-lg lg:hidden"
+								class="inline-flex items-center p-2 rounded-lg xl:hidden"
 								aria-controls="mobile-menu-2"
 								aria-expanded="false">
 								<span class="sr-only">Ouvrir le menu principal</span>
 								<svg
-									class="w-8 h-8"
+									class="w-8 h-8 lg:w-10 lg:h-10"
 									fill="currentColor"
 									viewBox="0 0 20 20"
 									xmlns="http://www.w3.org/2000/svg">
@@ -56,9 +52,10 @@
 							</button>
 						</div>
 						<div
-							class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+							class="hidden justify-between items-center w-full xl:flex xl:w-auto xl:order-1"
 							id="mobile-menu-2">
-							<ul class="flex flex-col mt-8 gap-5 lg:gap-8 lg:flex-row lg:mt-0">
+							<ul
+								class="navbar__menu flex flex-col mt-8 gap-5 xl:gap-8 xl:flex-row xl:mt-0 xl:items-center">
 								<li>
 									<a
 										href="index.html"
@@ -69,7 +66,7 @@
 								</li>
 								<li>
 									<a
-										href="index.html#a-propos"
+										href="#a-propos"
 										class="navbar__menu-item block font-semibold hover:underline"
 										>À propos</a
 									>
@@ -90,18 +87,20 @@
 								</li>
 								<li>
 									<a
-										href="index.html#contact"
+										href="#contact"
 										class="navbar__menu-item block font-semibold hover:underline"
 										>Contact</a
 									>
 								</li>
 
-								<li class="lg:hidden">
-									<a
-										href="boites-repas.html/#offre-speciale"
-										class="navbar__button rounded-lg font-semibold inline-block px-4 lg:block lg:px-5 py-2 lg:py-2.5"
-										>Offre spéciale!</a
-									>
+								<li>
+									<button
+										class="navbar__button rounded-lg p-4 font-semibold"
+										id="butInstall"
+										aria-label="Installer"
+										hidden>
+										Installer l'application
+									</button>
 								</li>
 							</ul>
 						</div>

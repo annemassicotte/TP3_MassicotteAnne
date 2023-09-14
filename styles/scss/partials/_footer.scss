@@ -17,7 +17,13 @@
 		font-weight: 700;
 	}
 
+	&__menu{
+		padding-left:0 !important;
+	}
+
 	&__menu-item {
+		padding-left: 0;
+
 		&:not(:last-child) {
 			margin-bottom: 0.5rem;
 		}

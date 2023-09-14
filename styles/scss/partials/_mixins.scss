@@ -1,4 +1,5 @@
-@mixin buttonColors($color, $bg-color) {
+@mixin buttonColors($color, $bg-color, $font-weight: 600) {
 	color: $color;
 	background-color: $bg-color;
+	font-weight: $font-weight;
 }

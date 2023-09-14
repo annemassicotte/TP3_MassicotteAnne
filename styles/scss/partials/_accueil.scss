@@ -10,6 +10,10 @@
 	}
 }
 
+%background-cover{
+	background-size: cover;
+}
+
 /* Section Catégories */
 
 .intro-accueil {
@@ -17,13 +21,26 @@
 		font-family: variables.$font-headings;
 	}
 
-	&__category {
-		img {
-			filter: brightness(40%);
+	&__categories {
+
+		&-dejeuner {
+			background-image: url("../../images/categorie-dejeuner.jpg");
+			@extend %background-cover;
 		}
 
-		h2 {
-			transform: translate(-50%, -50%);
+		&-diner {
+			background-image: url("../../images/categorie-diner-souper.jpg");
+			@extend %background-cover;
+		}
+
+		&-dessert {
+			background-image: url("../../images/categorie-dessert.jpg");
+			@extend %background-cover;
+		}
+
+		&-collation {
+			background-image: url("../../images/categorie-collation.jpg");
+			@extend %background-cover;
 		}
 	}
 

@@ -6,13 +6,9 @@ header {
 }
 
 .navbar {
-	&__button {
-		@include mixins.buttonColors(variables.$white, variables.$green);
 
-		&:hover,
-		&:focus {
-			@include mixins.buttonColors(variables.$white, variables.$pink);
-		}
+	&__menu{
+		padding-left:0 !important;
 	}
 
 	&__menu-item {
@@ -25,6 +21,15 @@ header {
 		&--active {
 			text-decoration: underline;
 			color: variables.$green;
+		}
+	}
+
+	&__button {
+		@include mixins.buttonColors(variables.$white, variables.$green);
+
+		&:hover,
+		&:focus {
+			@include mixins.buttonColors(variables.$white, variables.$pink);
 		}
 	}
 }
