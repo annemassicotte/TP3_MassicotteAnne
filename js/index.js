@@ -24,3 +24,22 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const anchors = document.querySelectorAll('.navbar__menu-item');
+    const currentUrl = window.location.href;
+
+    anchors.forEach(function(anchor) {
+		const href = anchor.getAttribute('href');
+		
+        if (href.startsWith('#')) {
+            if (currentUrl.includes(href)) {
+                anchor.classList.add('navbar__menu-item--active');
+            }
+        } else if (currentUrl.endsWith(href)) {
+            anchor.classList.add('navbar__menu-item--active');
+        } else {
+            anchor.classList.remove('navbar__menu-item--active');
+        }
+    });
+});
