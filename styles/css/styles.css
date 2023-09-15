@@ -149,10 +149,11 @@ header {
   background-size: cover;
 }
 
-/* Section Catégories */
-.intro-accueil__title {
+.intro-accueil__categories, .intro-accueil__title {
   font-family: "DM Serif Display", serif;
 }
+
+/* Section Catégories */
 .intro-accueil__categories a:focus {
   border-color: #c1495b;
 }
@@ -172,9 +173,6 @@ header {
 .cta-section {
   background: #ffffff;
   background: linear-gradient(180deg, #ffffff 0%, #e1f6b7 100%);
-}
-.cta-section__title {
-  font-family: "DM Serif Display", serif;
 }
 /* Section À propos */
 .section-a-propos {

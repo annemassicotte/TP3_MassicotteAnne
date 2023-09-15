@@ -14,14 +14,20 @@
 	background-size: cover;
 }
 
+%font-headings {
+	font-family: variables.$font-headings;
+}
+
 /* Section Catégories */
 
 .intro-accueil {
 	&__title {
-		font-family: variables.$font-headings;
+		@extend %font-headings;
 	}
 
 	&__categories {
+		@extend %font-headings;
+
 		a {
 			&:focus {
 				border-color: variables.$pink;
@@ -63,10 +69,6 @@
 		variables.$white 0%,
 		variables.$lighter-green 100%
 	);
-
-	&__title {
-		font-family: variables.$font-headings;
-	}
 
 	&__button {
 		@extend %button;
