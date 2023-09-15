@@ -39,6 +39,9 @@ header {
   background-color: #e1f6b7;
 }
 
+.navbar a:focus {
+  border-color: #c1495b;
+}
 .navbar__menu {
   padding-left: 0 !important;
 }
@@ -179,8 +182,8 @@ header {
   background: #e1f6b7;
   background: linear-gradient(180deg, #e1f6b7 0%, #ffffff 100%);
 }
-.section-recette-mois button:focus {
-  border-color: #c1495b;
+.section-recette-mois button:focus span {
+  color: #c1495b;
 }
 .section-recette-mois__title {
   font-family: "Raleway", sans-serif;

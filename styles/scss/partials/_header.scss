@@ -6,6 +6,12 @@ header {
 }
 
 .navbar {
+	a {
+		&:focus {
+			border-color: variables.$pink;
+		}
+	}
+
 	&__menu {
 		padding-left: 0 !important;
 	}

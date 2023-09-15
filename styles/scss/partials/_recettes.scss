@@ -3,7 +3,9 @@
 .section-recette-mois {
 	button {
 		&:focus {
-			border-color: variables.$pink;
+			span {
+				color: variables.$pink;
+			}
 		}
 	}
 
