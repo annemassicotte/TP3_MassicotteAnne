@@ -4,8 +4,6 @@ Travail final par Anne Massicotte.
 
 ## Components Tailwind
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
 ### Navbar
 
 [https://flowbite.com/blocks/marketing/header/](https://flowbite.com/blocks/marketing/header/) 
