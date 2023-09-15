@@ -107,6 +107,23 @@ header {
   }
 }
 
+#contact-info {
+  position: relative;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.5s ease;
+  width: fit-content;
+  margin-left: auto;
+}
+#contact-info.scrolled {
+  border-color: #fff;
+}
+@media (max-width: 1024px) {
+  #contact-info {
+    margin-right: auto;
+    margin-left: unset;
+  }
+}
+
 .section-a-propos__button, .cta-section__button, .intro-accueil__button {
   color: #ffffff;
   background-color: #116329;

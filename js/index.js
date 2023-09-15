@@ -1,3 +1,5 @@
+/* Active menu item */
+
 document.addEventListener("DOMContentLoaded", function () {
 	const anchors = document.querySelectorAll(".navbar__menu-item");
 
@@ -25,21 +27,38 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const anchors = document.querySelectorAll('.navbar__menu-item');
-    const currentUrl = window.location.href;
+document.addEventListener("DOMContentLoaded", function () {
+	const anchors = document.querySelectorAll(".navbar__menu-item");
+	const currentUrl = window.location.href;
 
-    anchors.forEach(function(anchor) {
-		const href = anchor.getAttribute('href');
-		
-        if (href.startsWith('#')) {
-            if (currentUrl.includes(href)) {
-                anchor.classList.add('navbar__menu-item--active');
-            }
-        } else if (currentUrl.endsWith(href)) {
-            anchor.classList.add('navbar__menu-item--active');
-        } else {
-            anchor.classList.remove('navbar__menu-item--active');
-        }
-    });
+	anchors.forEach(function (anchor) {
+		const href = anchor.getAttribute("href");
+
+		if (href.startsWith("#")) {
+			if (currentUrl.includes(href)) {
+				anchor.classList.add("navbar__menu-item--active");
+			}
+		} else if (currentUrl.endsWith(href)) {
+			anchor.classList.add("navbar__menu-item--active");
+		} else {
+			anchor.classList.remove("navbar__menu-item--active");
+		}
+	});
+});
+
+/* Underline Contact Footer when scrolled */
+
+const contactInfo = document.getElementById("contact-info");
+
+document.querySelector('a[href="#contact"]').addEventListener("click", (e) => {
+	e.preventDefault();
+
+	const targetElement = document.getElementById("contact");
+	if (targetElement) {
+		targetElement.scrollIntoView({ behavior: "smooth" });
+
+		setTimeout(() => {
+			contactInfo.classList.add("scrolled");
+		}, 1000);
+	}
 });
