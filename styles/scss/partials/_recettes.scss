@@ -16,16 +16,7 @@
 
 .section-categories-recettes {
 	background-color: variables.$lighter-green;
-
-	/* h3 {
-		background: rgb(0, 0, 0);
-		background: linear-gradient(
-			180deg,
-			rgba(0, 0, 0, 0) 0%,
-			rgb(0, 0, 0, 1) 100%
-		);
-	} */
-
+	
 	&__button {
 		border-color: variables.$black;
 

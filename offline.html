@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Recettes VégAnne | Pour l'amour du véganisme</title>
+		<!-- 		<link rel="stylesheet" href="css/normalize.css" /> -->
+		<link rel="stylesheet" href="styles/css/styles.css" />
+		<!-- <link rel="manifest" href="manifest.json" /> -->
+		<meta
+			name="description"
+			content="Recettes VégAnne est la référence québécoise pour des recettes véganes rapides et délicieuses!" />
+
+		<script src="js/index.js" defer></script>
+		<!-- <script>
+			if ("serviceWorker" in navigator) {
+				window.addEventListener("load", () => {
+					navigator.serviceWorker.register("service-worker.js").then((reg) => {
+						console.log("Service worker registered.", reg);
+					});
+				});
+			}
+		</script> -->
+		<link rel="icon" href="favicon.png" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<div class="container px-8 mx-auto">
+				<nav class="py-6 navbar">
+					<div class="flex flex-wrap justify-between items-center mx-auto">
+						<a href="index.html">
+							<img
+								src="images/logo_recettes_veganne_noir.svg"
+								class="h-12 lg:h-14 xl:h-16"
+								alt="Logo Recettes VégAnne" />
+						</a>
+						<div class="flex items-center">
+							<button
+								data-collapse-toggle="mobile-menu-2"
+								type="button"
+								class="inline-flex items-center p-2 rounded-lg xl:hidden"
+								aria-controls="mobile-menu-2"
+								aria-expanded="false">
+								<span class="sr-only">Ouvrir le menu principal</span>
+								<svg
+									class="w-8 h-8 lg:w-10 lg:h-10"
+									fill="currentColor"
+									viewBox="0 0 20 20"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill-rule="evenodd"
+										d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+										clip-rule="evenodd"></path>
+								</svg>
+							</button>
+						</div>
+						<div
+							class="hidden justify-between items-center w-full xl:flex xl:w-auto xl:order-1"
+							id="mobile-menu-2">
+							<ul
+								class="navbar__menu flex flex-col mt-8 gap-5 xl:gap-8 xl:flex-row xl:mt-0 xl:items-center">
+								<li>
+									<a
+										href="index.html"
+										class="navbar__menu-item block font-semibold hover:underline"
+										aria-current="page"
+										>Accueil</a
+									>
+								</li>
+								<li>
+									<a
+										href="#a-propos"
+										class="navbar__menu-item block font-semibold hover:underline"
+										>À propos</a
+									>
+								</li>
+								<li>
+									<a
+										href="recettes.html"
+										class="navbar__menu-item block font-semibold hover:underline"
+										>Recettes</a
+									>
+								</li>
+								<li>
+									<a
+										href="boites-repas.html"
+										class="navbar__menu-item block font-semibold hover:underline"
+										>Boîtes-repas</a
+									>
+								</li>
+								<li>
+									<a
+										href="#contact"
+										class="navbar__menu-item block font-semibold hover:underline"
+										>Contact</a
+									>
+								</li>
+
+								<li>
+									<button
+										class="navbar__button rounded-lg p-4 font-semibold"
+										id="butInstall"
+										aria-label="Installer"
+										hidden>
+										Installer l'application
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="offline-message py-8">
+				<div
+					class="container px-8 mx-auto grid grid-cols-12 items-center gap-8">
+					<div class="col-span-12 text-white">
+						<div
+							class="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
+							<i class="fa fa-exclamation-triangle text-2xl"></i>
+							<p>Connexion Internet perdue. Vous êtes hors-ligne.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="intro-accueil py-12 lg:py-24">
+				<div
+					class="container px-8 mx-auto grid grid-cols-12 items-center gap-8">
+					<div class="col-span-12">
+						<h1 class="hidden">Recettes VégAnne</h1>
+						<p
+							class="intro-accueil__title text-center text-4xl mb-4 md:mb-6 xl:mb-10 lg:text-5xl">
+							Qu'est-ce qu'on mange pour...
+						</p>
+					</div>
+					<div
+						class="col-span-12 md:col-span-6 xl:col-span-3 intro-accueil__categories intro-accueil__categories-dejeuner zoom-in rounded-2xl h-full hover:drop-shadow-2xl">
+						<a
+							href="recettes.html#dejeuners"
+							class="flex items-center flex-column justify-center h-full">
+							<h2
+								class="py-48 text-center text-white text-3xl xl:text-2xl 2xl:text-3xl">
+								Déjeuner
+							</h2>
+						</a>
+					</div>
+					<div
+						class="col-span-12 md:col-span-6 xl:col-span-3 intro-accueil__categories intro-accueil__categories-diner zoom-in rounded-2xl h-full hover:drop-shadow-2xl">
+						<a
+							href="recettes.html#diners-soupers"
+							class="flex items-center flex-column justify-center h-full">
+							<h2
+								class="py-48 text-center text-white text-3xl xl:text-2xl 2xl:text-3xl">
+								Dîner ou souper
+							</h2>
+						</a>
+					</div>
+					<div
+						class="col-span-12 md:col-span-6 xl:col-span-3 intro-accueil__categories intro-accueil__categories-dessert zoom-in rounded-2xl h-full hover:drop-shadow-2xl">
+						<a
+							href="recettes.html#desserts"
+							class="flex items-center flex-column justify-center h-full">
+							<h2
+								class="py-48 text-center text-white text-3xl xl:text-2xl 2xl:text-3xl">
+								Dessert
+							</h2>
+						</a>
+					</div>
+					<div
+						class="col-span-12 md:col-span-6 xl:col-span-3 intro-accueil__categories intro-accueil__categories-collation zoom-in rounded-2xl h-full hover:drop-shadow-2xl">
+						<a
+							href="recettes.html#collations"
+							class="flex items-center flex-column justify-center h-full">
+							<h2
+								class="py-48 text-center text-white text-3xl xl:text-2xl 2xl:text-3xl">
+								Collation
+							</h2>
+						</a>
+					</div>
+					<div class="col-span-12 mx-auto">
+						<a
+							href="recettes.html"
+							class="intro-accueil__button inline-block p-4 rounded-lg mt-4 md:mt-6 xl:mt-10"
+							>Voir toute les recettes</a
+						>
+					</div>
+				</div>
+			</section>
+
+			<section class="cta-section py-6 lg:py-12">
+				<div
+					class="container px-8 mx-auto grid grid-cols-12 gap-8 items-center lg:gap-20">
+					<div class="col-span-12 lg:col-span-6">
+						<h2 class="hidden">Boîtes-repas</h2>
+						<p class="cta-section__title text-3xl lg:text-4xl mb-8">
+							Vous n'avez pas envie de cuisiner? Pensez aux Boîtes-repas
+							VégAnne!
+						</p>
+						<p>
+							Notre service de boîtes-repas livrées à domicile vous offre une
+							expérience culinaire sans tracas. Avec une variété de délicieuses
+							recettes 100 % véganes préparées avec soin, vous pourrez savourer
+							des repas sains et équilibrés sans avoir à passer des heures en
+							cuisine. Il vous suffit de passer votre commande en ligne, et nous
+							vous livrerons des plats frais et délicieux directement à votre
+							porte.
+						</p>
+						<h3 class="text-2xl 2xl:text-3xl mt-4 mb-4 lg:mt-6">
+							Les avantages
+						</h3>
+						<ul class="list-disc">
+							<li>Variété de repas véganes équilibrés</li>
+							<li>Portions adaptées à vos besoins</li>
+							<li>Produits frais et de saison</li>
+						</ul>
+						<a
+							href="boites-repas.html"
+							class="cta-section__button inline-block p-4 rounded-lg mt-8 mb-2 lg:mb-0"
+							>En savoir plus</a
+						>
+					</div>
+
+					<div class="col-span-12 lg:col-span-6">
+						<img
+							src="images/ingredients-boite-repas.jpg"
+							alt="Boîte-repas VégAnne"
+							class="rounded-2xl" />
+					</div>
+				</div>
+			</section>
+
+			<section class="section-a-propos py-12 lg:py-24" id="a-propos">
+				<div
+					class="container px-8 mx-auto grid grid-cols-12 gap-8 items-center">
+					<div class="col-span-12 text-center lg:col-start-3 lg:col-end-11">
+						<h2 class="text-3xl lg:text-4xl mb-8">À propos</h2>
+						<p>
+							Recettes VégAnne est votre destination gourmande pour des recettes
+							véganes délicieuses et inspirantes ! Que vous soyez un végétalien
+							chevronné, un curieux culinaire ou simplement à la recherche
+							d'idées pour intégrer plus de plats à base de plantes dans votre
+							alimentation, vous tomberez sous le charme de nos recettes tout
+							simplement exquises.
+						</p>
+						<br />
+
+						<p>
+							Explorez nos recettes créatives, apprenez des astuces de cuisine
+							végane et plongez dans un monde de saveurs qui vous prouvera que
+							manger végétalien peut être un véritable festin pour les sens.
+						</p>
+						<br />
+						<p>Bon appétit!</p>
+
+						<a
+							href="#contact"
+							class="section-a-propos__button inline-block p-4 rounded-lg mt-8 mb-2"
+							>Me contacter</a
+						>
+					</div>
+
+					<div class="col-span-12 sm:col-span-6 lg:col-span-4">
+						<img
+							src="images/tortilla.jpg"
+							alt="Tortilla végane"
+							class="rounded-2xl" />
+					</div>
+					<div class="hidden sm:block sm:col-span-6 lg:col-span-4">
+						<img src="images/toasts.jpg" alt="Rôties" class="rounded-2xl" />
+					</div>
+					<div
+						class="hidden sm:block sm:col-start-4 sm:col-end-10 lg:col-span-4">
+						<img
+							src="images/sandwich.jpg"
+							alt="Boîte-repas VégAnne"
+							class="rounded-2xl" />
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer py-10" id="contact">
+			<div class="container px-8 mx-auto">
+				<div class="flex flex-wrap gap-8 justify-between">
+					<div class="footer__column">
+						<img
+							src="images/logo_recettes_veganne_blanc.svg"
+							alt="Logo Recette VégAnne"
+							class="footer__logo" />
+					</div>
+					<div class="footer__column text-left lg:text-center">
+						<p class="footer__title mb-3 text-xl lg:text-2xl 2xl:text-3xl">
+							Accès rapide
+						</p>
+						<nav>
+							<ul class="footer__menu">
+								<li class="footer__menu-item">
+									<a href="recettes.html">Recettes</a>
+								</li>
+
+								<li class="footer__menu-item">
+									<a href="boites-repas.html">Boîtes-repas</a>
+								</li>
+
+								<li class="footer__menu-item">
+									<a href="index.html/#a-propos">À propos</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column text-left lg:text-right">
+						<p class="footer__title mb-3 text-xl lg:text-2xl 2xl:text-3xl">
+							Contact
+						</p>
+						<a href="mailto:info@recettesveganne.com" class="inline-block mb-2"
+							>info@recettesveganne.com</a
+						>
+						<div class="flex gap-3 flex-start lg:justify-end">
+							<a href="#" aria-label="Facebook">
+								<i class="fab fa-facebook text-xl"></i>
+							</a>
+							<a href="#" aria-label="LinkedIn">
+								<i class="fab fa-linkedin text-xl"></i>
+							</a>
+							<a href="#" aria-label="Twitter">
+								<i class="fab fa-twitter text-xl"></i>
+							</a>
+							<a href="#" aria-label="Instagram">
+								<i class="fab fa-instagram text-xl"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<hr class="my-8" />
+
+				<div class="flex justify-between">
+					<p>© 2023. Recettes VégAnne</p>
+					<p>Par: Anne Massicotte</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+		<script src="js/install.js"></script>
+	</body>
+</html>

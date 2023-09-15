@@ -163,14 +163,6 @@ header {
 
 .section-categories-recettes {
   background-color: #e1f6b7;
-  /* h3 {
-  	background: rgb(0, 0, 0);
-  	background: linear-gradient(
-  		180deg,
-  		rgba(0, 0, 0, 0) 0%,
-  		rgb(0, 0, 0, 1) 100%
-  	);
-  } */
 }
 .section-categories-recettes__button {
   border-color: rgb(12, 12, 12);
@@ -239,4 +231,8 @@ header {
 }
 .section-abonnement .input-control span {
   color: rgb(203, 15, 15);
+}
+
+.offline-message {
+  background-color: #116329;
 }/*# sourceMappingURL=styles.css.map */
