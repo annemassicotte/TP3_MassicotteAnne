@@ -36,6 +36,11 @@
 			rel="stylesheet" />
 	</head>
 	<body>
+		<a
+			class="screen-reader-text border-none h-px -m-px overflow-hidden p-0 absolute w-px"
+			href="#main"
+			>Aller au contenu principal</a
+		>
 		<header>
 			<div class="container px-8 mx-auto">
 				<nav class="py-6 navbar">
@@ -123,7 +128,7 @@
 				</nav>
 			</div>
 		</header>
-		<main>
+		<main id="main">
 			<section class="intro-accueil py-12 lg:py-24">
 				<div
 					class="container px-8 mx-auto grid grid-cols-12 items-center gap-8">
@@ -138,7 +143,7 @@
 						class="col-span-12 md:col-span-6 xl:col-span-3 intro-accueil__categories intro-accueil__categories-dejeuner zoom-in rounded-2xl h-full hover:drop-shadow-2xl">
 						<a
 							href="recettes.html#dejeuners"
-							class="flex items-center flex-column justify-center h-full">
+							class="flex items-center flex-column justify-center h-full focus:border-2 focus:rounded-2xl">
 							<h2
 								class="py-48 text-center text-white text-3xl xl:text-2xl 2xl:text-3xl">
 								Déjeuner
@@ -149,7 +154,7 @@
 						class="col-span-12 md:col-span-6 xl:col-span-3 intro-accueil__categories intro-accueil__categories-diner zoom-in rounded-2xl h-full hover:drop-shadow-2xl">
 						<a
 							href="recettes.html#diners-soupers"
-							class="flex items-center flex-column justify-center h-full">
+							class="flex items-center flex-column justify-center h-full focus:border-2 focus:rounded-2xl">
 							<h2
 								class="py-48 text-center text-white text-3xl xl:text-2xl 2xl:text-3xl">
 								Dîner ou souper
@@ -160,7 +165,7 @@
 						class="col-span-12 md:col-span-6 xl:col-span-3 intro-accueil__categories intro-accueil__categories-dessert zoom-in rounded-2xl h-full hover:drop-shadow-2xl">
 						<a
 							href="recettes.html#desserts"
-							class="flex items-center flex-column justify-center h-full">
+							class="flex items-center flex-column justify-center h-full focus:border-2 focus:rounded-2xl">
 							<h2
 								class="py-48 text-center text-white text-3xl xl:text-2xl 2xl:text-3xl">
 								Dessert
@@ -171,7 +176,7 @@
 						class="col-span-12 md:col-span-6 xl:col-span-3 intro-accueil__categories intro-accueil__categories-collation zoom-in rounded-2xl h-full hover:drop-shadow-2xl">
 						<a
 							href="recettes.html#collations"
-							class="flex items-center flex-column justify-center h-full">
+							class="flex items-center flex-column justify-center h-full focus:border-2 focus:rounded-2xl">
 							<h2
 								class="py-48 text-center text-white text-3xl xl:text-2xl 2xl:text-3xl">
 								Collation
@@ -224,7 +229,7 @@
 					<div class="col-span-12 lg:col-span-6">
 						<img
 							src="images/ingredients-boite-repas.jpg"
-							alt="Boîte-repas VégAnne"
+							alt="Ingrédients Boîte-repas VégAnne"
 							class="rounded-2xl" />
 					</div>
 				</div>
@@ -271,10 +276,7 @@
 					</div>
 					<div
 						class="hidden sm:block sm:col-start-4 sm:col-end-10 lg:col-span-4">
-						<img
-							src="images/sandwich.jpg"
-							alt="Boîte-repas VégAnne"
-							class="rounded-2xl" />
+						<img src="images/sandwich.jpg" alt="Sandwich" class="rounded-2xl" />
 					</div>
 				</div>
 			</section>
@@ -289,9 +291,7 @@
 							class="footer__logo" />
 					</div>
 					<div class="footer__column text-left lg:text-center">
-						<p class="footer__title mb-3 text-2xl 2xl:text-3xl">
-							Accès rapide
-						</p>
+						<p class="footer__title mb-3 text-2xl 2xl:text-3xl">Accès rapide</p>
 						<nav>
 							<ul class="footer__menu">
 								<li class="footer__menu-item">
@@ -303,13 +303,15 @@
 								</li>
 
 								<li class="footer__menu-item">
-									<a href="index.html/#a-propos">À propos</a>
+									<a href="index.html#a-propos">À propos</a>
 								</li>
 							</ul>
 						</nav>
 					</div>
 					<div class="footer__column text-left lg:text-right">
-						<p class="footer__title mb-3 text-2xl 2xl:text-3xl" id="contact-info">
+						<p
+							class="footer__title mb-3 text-2xl 2xl:text-3xl"
+							id="contact-info">
 							Contact
 						</p>
 						<a href="mailto:info@recettesveganne.com" class="inline-block mb-2"

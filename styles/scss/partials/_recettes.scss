@@ -1,6 +1,12 @@
 @use "variables";
 
 .section-recette-mois {
+	button {
+		&:focus {
+			border-color: variables.$pink;
+		}
+	}
+
 	&__title {
 		font-family: variables.$font-body;
 	}
@@ -16,17 +22,10 @@
 
 .section-categories-recettes {
 	background-color: variables.$lighter-green;
-	
-	&__button {
-		border-color: variables.$black;
 
-		transition: ease all 0.3s;
-
-		&:hover {
-			transform: scale(1.05);
-			transition: ease all 0.3s;
-			background-color: variables.$green;
-			border-color:variables.$green;
+	a {
+		&:focus {
+			border-color: variables.$pink;
 		}
 	}
 }

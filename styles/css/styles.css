@@ -4,6 +4,7 @@ body {
   color: rgb(12, 12, 12);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
+  line-height: 1.8;
 }
 
 h1,
@@ -62,9 +63,18 @@ header {
   font-weight: 600;
 }
 
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  word-wrap: normal !important;
+}
+
 .footer {
   background-color: #116329;
   color: #ffffff;
+}
+.footer a:hover, .footer a:focus {
+  color: #e1f6b7;
 }
 .footer__column {
   flex-basis: calc(33.3333333333% - 2rem);
@@ -143,6 +153,9 @@ header {
 .intro-accueil__title {
   font-family: "DM Serif Display", serif;
 }
+.intro-accueil__categories a:focus {
+  border-color: #c1495b;
+}
 .intro-accueil__categories-dejeuner {
   background-image: url("../../images/categorie-dejeuner.jpg");
 }
@@ -168,6 +181,9 @@ header {
   background: #e1f6b7;
   background: linear-gradient(180deg, #e1f6b7 0%, #ffffff 100%);
 }
+.section-recette-mois button:focus {
+  border-color: #c1495b;
+}
 .section-recette-mois__title {
   font-family: "Raleway", sans-serif;
 }
@@ -181,15 +197,8 @@ header {
 .section-categories-recettes {
   background-color: #e1f6b7;
 }
-.section-categories-recettes__button {
-  border-color: rgb(12, 12, 12);
-  transition: ease all 0.3s;
-}
-.section-categories-recettes__button:hover {
-  transform: scale(1.05);
-  transition: ease all 0.3s;
-  background-color: #116329;
-  border-color: #116329;
+.section-categories-recettes a:focus {
+  border-color: #c1495b;
 }
 
 .section-intro__button {

@@ -20,6 +20,11 @@
 			rel="stylesheet" />
 	</head>
 	<body>
+		<a
+			class="screen-reader-text border-none h-px -m-px overflow-hidden p-0 absolute w-px"
+			href="#main"
+			>Aller au contenu principal</a
+		>
 		<header>
 			<div class="container px-8 mx-auto">
 				<nav class="py-6 navbar">
@@ -107,7 +112,7 @@
 				</nav>
 			</div>
 		</header>
-		<main>
+		<main id="main">
 			<section class="section-titre py-24 lg:py-36">
 				<div class="container px-8 mx-auto grid grid-cols-12 items-center">
 					<div class="col-span-12">
@@ -146,7 +151,7 @@
 							<h3 class="text-lg" id="accordion-flush-heading-1">
 								<button
 									type="button"
-									class="flex items-center justify-between w-full py-4 font-medium text-left text-gray-500 border-b border-gray-200"
+									class="flex items-center justify-between w-full py-4 font-medium text-left text-gray-500 border-b border-gray-200 focus:border-2"
 									data-accordion-target="#accordion-flush-body-1"
 									aria-expanded="true"
 									aria-controls="accordion-flush-body-1">
@@ -191,7 +196,7 @@
 							<h3 class="text-lg" id="accordion-flush-heading-2">
 								<button
 									type="button"
-									class="flex items-center justify-between w-full py-4 font-medium text-left text-gray-500 border-b border-gray-200"
+									class="flex items-center justify-between w-full py-4 font-medium text-left text-gray-500 border-b border-gray-200 focus:border-2"
 									data-accordion-target="#accordion-flush-body-2"
 									aria-expanded="false"
 									aria-controls="accordion-flush-body-2">
@@ -216,7 +221,7 @@
 								id="accordion-flush-body-2"
 								class="hidden"
 								aria-labelledby="accordion-flush-heading-2">
-								<div class="py-5 border-b border-gray-200 dark:border-gray-700">
+								<div class="py-5 border-b border-gray-200">
 									<ol class="text-gray-500 dark:text-gray-400 list-decimal">
 										<li>
 											Faire cuire les pates selon les directives de l’emballage.
@@ -267,10 +272,10 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/crepes.jpg"
-								alt="Crêpes"
+								alt="Crêpes au sirop d'érable"
 								class="rounded-2xl mb-4" />
 							<h3
 								class="text-center font-semibold rounded-2xl mb-2 text-xl xl:mb-0">
@@ -280,7 +285,7 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/pains-dores.jpg"
 								alt="Pains dorés"
@@ -292,7 +297,7 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/pain-bananes.jpg"
 								alt="Pain aux bananes"
@@ -304,10 +309,10 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/gaufres.jpg"
-								alt="Gaufres"
+								alt="Gaufres aux noix"
 								class="rounded-2xl mb-4" />
 							<h3 class="text-center font-semibold rounded-2xl text-xl">
 								Gaufres aux noix
@@ -328,10 +333,10 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/burger.jpg"
-								alt="Burger"
+								alt="Burger de lentilles"
 								class="rounded-2xl mb-4" />
 							<h3
 								class="text-center font-semibold rounded-2xl mb-2 text-xl xl:mb-0">
@@ -341,10 +346,10 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/pates.jpg"
-								alt="Pâtes"
+								alt="Pâtes tomates et basilic"
 								class="rounded-2xl mb-4" />
 							<h3 class="text-center font-semibold rounded-2xl text-xl">
 								Pâtes tomates et basilic
@@ -353,10 +358,10 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/pizza.jpg"
-								alt="Pizza"
+								alt="Pizza Margherita aux épinards"
 								class="rounded-2xl mb-4" />
 							<h3 class="text-center font-semibold rounded-2xl text-xl">
 								Pizza Margherita aux épinards
@@ -365,8 +370,11 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
-							<img src="images/tofu.jpg" alt="Tofu" class="rounded-2xl mb-4" />
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
+							<img
+								src="images/tofu.jpg"
+								alt="Tofu style poulet au beurre"
+								class="rounded-2xl mb-4" />
 							<h3 class="text-center font-semibold rounded-2xl text-xl">
 								Tofu style Poulet au beurre
 							</h3>
@@ -384,10 +392,10 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/beignes.jpg"
-								alt="Beignes"
+								alt="Beignes citron et pavot"
 								class="rounded-2xl mb-4" />
 							<h3
 								class="text-center font-semibold rounded-2xl mb-2 text-xl xl:mb-0">
@@ -397,10 +405,10 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/gateau.jpg"
-								alt="Gâteau"
+								alt="Gâteau étagé au chocolat"
 								class="rounded-2xl mb-4" />
 							<h3 class="text-center font-semibold rounded-2xl text-xl">
 								Gâteau étagé au chocolat
@@ -409,10 +417,10 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/pouding.jpg"
-								alt="Pouding"
+								alt="Pouding chia et granola"
 								class="rounded-2xl mb-4" />
 							<h3 class="text-center font-semibold rounded-2xl text-xl">
 								Pouding de chia et granola
@@ -421,10 +429,10 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/tarte.jpg"
-								alt="Tarte"
+								alt="Tarte aux pommes"
 								class="rounded-2xl mb-4" />
 							<h3 class="text-center font-semibold rounded-2xl text-xl">
 								Tarte aux pommes
@@ -445,10 +453,10 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/bouchees-choco.jpg"
-								alt="Bouchées d'énergie"
+								alt="Bouchées d'énergie au chocolat"
 								class="rounded-2xl mb-4" />
 							<h3
 								class="text-center font-semibold rounded-2xl mb-2 text-xl xl:mb-0">
@@ -458,10 +466,10 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/smoothie.jpg"
-								alt="Smoothie"
+								alt="Smoothie framboises, bananes et bleuets"
 								class="rounded-2xl mb-4" />
 							<h3 class="text-center font-semibold rounded-2xl text-xl">
 								Smoothie framboises, bananes et bleuets
@@ -470,10 +478,10 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/popcorn.jpg"
-								alt="Popcorn"
+								alt="Popcorn au caramel végane"
 								class="rounded-2xl mb-4" />
 							<h3 class="text-center font-semibold rounded-2xl text-xl">
 								Popcorn au caramel végane
@@ -482,10 +490,10 @@
 					</div>
 					<div
 						class="col-span-12 md:col-span-6 xl:col-span-3 zoom-in hover:drop-shadow-2xl">
-						<a href="#">
+						<a href="#" class="block focus:border-2 focus:rounded-2xl">
 							<img
 								src="images/granola.jpg"
-								alt="Barre granola"
+								alt="Barre granola santé"
 								class="rounded-2xl mb-4" />
 							<h3 class="text-center font-semibold rounded-2xl text-xl">
 								Barre granola santé
@@ -562,9 +570,7 @@
 							class="footer__logo" />
 					</div>
 					<div class="footer__column text-left lg:text-center">
-						<p class="footer__title mb-3 text-2xl 2xl:text-3xl">
-							Accès rapide
-						</p>
+						<p class="footer__title mb-3 text-2xl 2xl:text-3xl">Accès rapide</p>
 						<nav>
 							<ul class="footer__menu">
 								<li class="footer__menu-item">
@@ -576,13 +582,15 @@
 								</li>
 
 								<li class="footer__menu-item">
-									<a href="index.html/#a-propos">À propos</a>
+									<a href="index.html#a-propos">À propos</a>
 								</li>
 							</ul>
 						</nav>
 					</div>
 					<div class="footer__column text-left lg:text-right">
-						<p class="footer__title mb-3 text-2xl 2xl:text-3xl" id="contact-info">
+						<p
+							class="footer__title mb-3 text-2xl 2xl:text-3xl"
+							id="contact-info">
 							Contact
 						</p>
 						<a href="mailto:info@recettesveganne.com" class="inline-block mb-2"

@@ -27,6 +27,11 @@
 			rel="stylesheet" />
 	</head>
 	<body>
+		<a
+			class="screen-reader-text border-none h-px -m-px overflow-hidden p-0 absolute w-px"
+			href="#main"
+			>Aller au contenu principal</a
+		>
 		<header>
 			<div class="container px-8 mx-auto">
 				<nav class="py-6 navbar">
@@ -114,7 +119,7 @@
 				</nav>
 			</div>
 		</header>
-		<main class="flex items-center justify-center">
+		<main class="flex items-center justify-center" id="main">
 			<p class="py-96">Votre formulaire a été envoyé avec succès!</p>
 		</main>
 		<footer class="footer py-10" id="contact">
@@ -127,9 +132,7 @@
 							class="footer__logo" />
 					</div>
 					<div class="footer__column text-left lg:text-center">
-						<p class="footer__title mb-3 text-2xl 2xl:text-3xl">
-							Accès rapide
-						</p>
+						<p class="footer__title mb-3 text-2xl 2xl:text-3xl">Accès rapide</p>
 						<nav>
 							<ul class="footer__menu">
 								<li class="footer__menu-item">
@@ -141,13 +144,15 @@
 								</li>
 
 								<li class="footer__menu-item">
-									<a href="index.html/#a-propos">À propos</a>
+									<a href="index.html#a-propos">À propos</a>
 								</li>
 							</ul>
 						</nav>
 					</div>
 					<div class="footer__column text-left lg:text-right">
-						<p class="footer__title mb-3 text-2xl 2xl:text-3xl" id="contact-info">
+						<p
+							class="footer__title mb-3 text-2xl 2xl:text-3xl"
+							id="contact-info">
 							Contact
 						</p>
 						<a href="mailto:info@recettesveganne.com" class="inline-block mb-2"

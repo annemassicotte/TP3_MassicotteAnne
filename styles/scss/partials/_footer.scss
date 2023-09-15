@@ -4,6 +4,13 @@
 	background-color: variables.$green;
 	color: variables.$white;
 
+	a {
+		&:hover,
+		&:focus {
+			color: variables.$lighter-green;
+		}
+	}
+
 	&__column {
 		flex-basis: calc((100% / 3) - 2rem);
 	}

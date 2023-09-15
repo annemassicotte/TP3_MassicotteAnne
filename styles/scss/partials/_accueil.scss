@@ -10,7 +10,7 @@
 	}
 }
 
-%background-cover{
+%background-cover {
 	background-size: cover;
 }
 
@@ -22,6 +22,11 @@
 	}
 
 	&__categories {
+		a {
+			&:focus {
+				border-color: variables.$pink;
+			}
+		}
 
 		&-dejeuner {
 			background-image: url("../../images/categorie-dejeuner.jpg");
